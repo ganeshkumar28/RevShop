@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample</title>
+
+<style>
+lable,input{
+	display : inline;
+}
+</style>
+</head>
+<body>
+	<section>
+    <div class="add-product-form">
+        <header class="main-header">Add new product</header>
+        <div class="data">
+        	<form action="http://localhost:8080/RevShop/RetailerServlet?taskType=addProducts" method = "POST">
+            <label for="name">Name:</label>
+            <input type="text" id="pname" name="pname" placeholder="Item name..."/>
+            <label for="price">Price:</label>
+            <input type="text" id="pprice" name="pprice" placeholder="0.00"/>
+            <label for="category">Category:</label>
+            <input type="text" id="pcategory" name="pcategory" placeholder="Category..."/>
+            <label for="description">Description:</label>
+            <input type="text" id="pdescription" name="pdescription" placeholder="Description..."/>
+        <div class="panel">
+            <button id="add-product-button" class="button" >Add</button>
+            <a href="#/products">
+                <button class="button" id="cancel-button">Cancel</button>
+            </a>
+        </div>
+        </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>
